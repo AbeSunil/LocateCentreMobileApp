@@ -1,0 +1,30 @@
+<script>
+
+
+$('#content').load("getParameters.html")
+
+</script>
+
+
+$(function() {
+  $(".but").on("click",function(e) {
+    e.preventDefault();
+    $(".content").hide();
+    $("#"+this.id+"div").show();
+  });
+});
+
+
+{"employees":[
+  { "firstName":"John", "lastName":"Doe" },
+  { "firstName":"Anna", "lastName":"Smith" },
+  { "firstName":"Peter", "lastName":"Jones" }
+]}
+
+
+==============to do============
+1. json data
+2. json fetch into combox
+3. beautify ui
+4. why color background chnages in getParameters loaded
+5. home button in all screen
